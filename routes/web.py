@@ -11,7 +11,7 @@ ROUTES = [
     Route.get('/posts', 'PostController@show'),
     Route.get('/post/@id', 'PostController@single'),
     Route.get('/post/@id/update', 'PostController@update'),
-    Route.get('/post/@id/update','PostController@store'),
+    Route.post('/post/@id/update','PostController@store'),
     Route.get('/post/@id/delete', 'PostController@delete')
 ]
 ROUTES += Auth.routes()
